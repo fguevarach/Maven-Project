@@ -41,5 +41,5 @@ jobs:
     - name: Build and push
       run:
         docker build -t fguevarach/github-training:latest .
-        docker images
+        #docker images
         docker push fguevarach/github-training:latest
