@@ -39,7 +39,7 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Build and push
-      run:
+      run: |
         docker build -t fguevarach/github-training:latest .
-        #docker images
+        docker images
         docker push fguevarach/github-training:latest
